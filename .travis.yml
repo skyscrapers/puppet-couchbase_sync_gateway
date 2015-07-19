@@ -1,7 +1,7 @@
 language: ruby
 rvm:
 - 2.1.2
-script: rake spec
+script: bundle exec rake spec
 env:
 - PUPPET_VERSION=4.2.0
 notifications:
