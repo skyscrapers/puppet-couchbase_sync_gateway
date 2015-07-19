@@ -1,6 +1,9 @@
 language: ruby
 rvm:
-  - 2.1.2
-script: "rake spec"
+- 2.1.2
+script: rake spec
 env:
-  - PUPPET_VERSION=4.2.0
+- PUPPET_VERSION=4.2.0
+notifications:
+  slack:
+    secure: m8KAW5aoHr2K20iRIHMhC3Dkstc2v5P3cZb7b2uCqoR23P4pHl74W4g8/jjkp3p/OA6iCXLoigncKHOrfDW8J3mrif8Uo1C5ALYdDU1DH2GCYUY580bbWaCRTE/xgKY5rqlt3wVlV5wZsxNy6AqhDo0s9n4R1DBJln8jpLWFmBxTpGCyLYWGwuUNbAAi3qzT+1jA3mG+69DzL+B9wwxHb6Te0aOMt7yULitPlwSWTzTd3RKEwMKMcCq3QNKrJg26/SKs7OCufGz5SuhsQQGP7kzgHvbhy22Kx1OXyzO46pD1dLTCii2Y2VfASYTIPKR5Ndiz7gklL4J4CN8qANp5uehTNsGlvR6Y90X2flIlTIYGsavBISOxoVawj7zwz26u/o+6uvG9VcyP9oeRnZYrRYCSn4l0bq72fljpvyt3umgBaD+K3qAsiFuFQj4cnFp+G6WYIDwCYiuSO/RvMZyjuLXus2WJXLDgurGnXtp17IDOaO4msXl+9Uwb5Lwb1FucgyvPSJiM6q/WVAa4ArBaCvDHW6jCa5Hr9qaBHoo+hfXm8GANy47aTpesRhF7xWP8Vf+tJ1xrWz+e5EUTlx7EZ8dd8tZxG5zFqvAnjg497i4SRO+pEDi1Zeo6WHN1snJej1fmfDDy7i6hUHUz7tZLKG+DS1lrwJdT1+065g3UVu4=
