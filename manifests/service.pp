@@ -14,5 +14,10 @@ class couchbase_sync_gateway::service {
         command      => 'initctl reload-configuration',
         path        => '/usr/bin:/usr/sbin:/bin:/usr/local/bin',
       }
+
+  service { 'couchbase-sync-gateway':
+    ensure => running,
+    enable => true;
+  }
          
 }   
