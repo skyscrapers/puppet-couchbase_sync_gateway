@@ -14,6 +14,8 @@ class couchbase_sync_gateway
       version           => $version,
       edition           => $edition,
       download_url_base => $download_url_base,
-  }
+  } ->
+
+  class {'couchbase_sync_gateway::service': }
 
 }

@@ -9,9 +9,9 @@ fi
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 DAEMON_PATH=/opt/couchbase-sync-gateway/bin/
 DAEMON=sync_gateway
-DAEMONOPTS=/opt/couchbase-sync-gateway/etc/sync-gateway.json
-LOGFILE=/opt/couchbase-sync-gateway/var/lib/couchbase/logs/start.log
-PIDFILE=/opt/couchbase-sync-gateway/var/lib/couchbase/couchbase-sync-gateway.pid
+DAEMONOPTS=/etc/sync-gateway.json
+LOGFILE=/var/lib/couchbase/logs/start.log
+PIDFILE=/var/lib/couchbase/couchbase-sync-gateway.pid
 NAME=couchbase-sync-gateway
 DESC="Couchbase sync_gateway"
 case "$1" in
