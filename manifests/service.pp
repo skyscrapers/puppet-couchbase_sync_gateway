@@ -10,6 +10,9 @@ class couchbase_sync_gateway::service {
         owner    => root,
         group    => root,
 
+      } -> exec { 'initctl reload-configuration':
+        command      => 'initctl reload-configuration',
+        path        => '/usr/bin:/usr/sbin:/bin:/usr/local/bin',
       }
          
 }   
